@@ -4,7 +4,9 @@ import spring.di.entity.Exam;
 
 public class GridExamConsole implements ExamConsle {
 private Exam exam;
-
+public GridExamConsole() {
+	
+}
 public GridExamConsole(Exam exam) {
 		
 		this.exam = exam;
@@ -15,6 +17,12 @@ public GridExamConsole(Exam exam) {
 		System.out.println("");
 		System.out.println("totla");
 
+	}
+
+	@Override
+	public void setExam(Exam exam) {
+		this.exam = exam;
+		
 	}
 
 }

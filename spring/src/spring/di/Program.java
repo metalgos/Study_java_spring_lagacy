@@ -9,12 +9,18 @@ import spring.di.ui.InlineExamConsole;
 public class Program {
 
 	public static void main(String[] args) {
-		
-		Exam exam = new NewlecExam();
-		//ExamConsle console = new InlineExamConsole(exam);
-		ExamConsle console = new GridExamConsole(exam);
-		console.print();	
 
-	} 
+		/*
+		 * Exam exam = new NewlecExam(); 
+		 * ExamConsle console = new GridExamConsole();
+		 * 
+		 * console.setExam(exam);
+		 */
+		
+		
+		ExamConsle console = ?;
+		console.print();
+
+	}
 
 }
