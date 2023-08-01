@@ -14,6 +14,7 @@ public class Program {
 		//ExamConsle console = new InlineExamConsole(exam);
 		ExamConsle console = new GridExamConsole(exam);
 		console.print();
+		
 
 	} 
 
