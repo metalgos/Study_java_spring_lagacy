@@ -19,11 +19,11 @@ public class Program {
 		 * 
 		 * console.setExam(exam);
 		 */
-		ApplicationContext context
-		= new ClassPathXmlApplicationContext("spring/di/setting.xml");
-
-	ExamConsle console = (ExamConsle) context.getBean("console");
-		//ExamConsle console = context.getBean(ExamConsle.class);
+		ApplicationContext context = new ClassPathXmlApplicationContext("spring/di/setting.xml");
+		Exam exam = context.getBean(Exam.class);
+		System.out.println(exam.toString());
+		ExamConsle console = (ExamConsle) context.getBean("console");
+		// ExamConsle console = context.getBean(ExamConsle.class);
 		console.print();
 
 	}
