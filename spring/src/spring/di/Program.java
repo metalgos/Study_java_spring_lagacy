@@ -1,5 +1,8 @@
 package spring.di;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.omg.CORBA.portable.ApplicationException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -25,6 +28,17 @@ public class Program {
 		ExamConsle console = (ExamConsle) context.getBean("console");
 		// ExamConsle console = context.getBean(ExamConsle.class);
 		console.print();
+		
+		List<Exam> exams = (List<Exam>) context.getBean("exams");//new ArrayList<>();
+		//exams.add(new NewlecExam(1,1,1,1));
+		
+		//new ArrayList<E>();
+		 
+		for(Exam e : exams) {
+			System.out.println(e);
+		}
+		
+		
 
 	}
 
