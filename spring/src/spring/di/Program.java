@@ -26,7 +26,7 @@ public class Program {
 		//Exam exam = context.getBean(Exam.class);
 		//System.out.println(exam.toString());
 		ExamConsle console = (ExamConsle) context.getBean("console");
-		// ExamConsle console = context.getBean(ExamConsle.class);
+		//ExamConsle console = context.getBean(ExamConsle.class);
 		console.print();
 		
 		//List<Exam> exams = (List<Exam>) context.getBean("exams");//new ArrayList<>();
