@@ -34,8 +34,7 @@ public class Program {
 						return result;
 					}
 				}
-				);
-		
+				);		
 		System.out.printf("total is %d\n" , proxy.total());
 		System.out.printf("avg is %f\n" , proxy.avg());
 
