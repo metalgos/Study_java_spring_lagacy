@@ -12,8 +12,7 @@ import spring.aop.entity.NewlecExam;
 
 public class Program {
 
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) {		
 		ApplicationContext context = 
 				//new AnnotationConfigApplicationContext(NewlecDIConfig.class);
 				new ClassPathXmlApplicationContext("spring/aop/setting.xml");
