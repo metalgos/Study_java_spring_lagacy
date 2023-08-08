@@ -9,10 +9,12 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
 	
-	<bean id="target" class="spring.aop.entity.NewlecExam" p:kor="1"
+	<bean id="target" class="spring.aop.entity.NewlecExam" p:kor="101"
 		p:eng="1" p:math="1" p:com="1"/>
 		<bean id="logAroundAdvice" class="spring.aop.advice.LogAroundAdvice"></bean>
 		<bean id="logBeforeAdvice" class="spring.aop.advice.LogBeforeAdvice"></bean>
+		<bean id="logAfterReturningAdvice" class="spring.aop.advice.LogAfterReturningAdvice"></bean>
+		<bean id="logAfterThrowingAdvice" class="spring.aop.advice.LogAfterThrowingAdvice"></bean>
 		
 		
 		<bean id="exam" class="org.springframework.aop.framework.ProxyFactoryBean">
@@ -22,6 +24,8 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		<list>
 		<value>logAroundAdvice</value>
 		<value>logBeforeAdvice</value>
+		<value>logAfterReturningAdvice</value>
+		<value>logAfterThrowingAdvice</value>
 		</list>
 		
 		</property>
