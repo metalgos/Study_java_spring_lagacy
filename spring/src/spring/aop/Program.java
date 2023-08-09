@@ -16,7 +16,6 @@ public class Program {
 		ApplicationContext context = 
 				//new AnnotationConfigApplicationContext(NewlecDIConfig.class);
 				new ClassPathXmlApplicationContext("spring/aop/setting.xml");
-		
 		Exam exam = (Exam) context.getBean("exam");
 		
 		System.out.printf("total is %d\n" , exam.total());
